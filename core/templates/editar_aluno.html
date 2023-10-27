@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block Atualizar_aluno %}
+<form method="POST">
+    {% csrf_token %}
+    {{ form }}
+    <button>Salvar</button>
+</form>
+{% endblock Atualizar_aluno %}

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block cadastrar_aluno %}
+{% block Cadastrar_aluno %}
   <h1>{% if form.instance.pk %}Editar Aluno{% else %}Cadastrar Aluno{% endif %}</h1>
   <form method="post">
     {% csrf_token %}
@@ -8,4 +8,4 @@
     <button type="submit">Salvar</button>
   </form>
   <a href="{% url 'Listar_alunos' %}">Voltar para a lista</a>
-{% endblock cadastrar_aluno %}
+{% endblock Cadastrar_aluno %}
